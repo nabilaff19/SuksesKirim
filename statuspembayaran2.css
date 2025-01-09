@@ -1,0 +1,116 @@
+Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffff;
+    color: #333;
+}
+
+
+/* Container Utama */
+.status-container {
+    max-width: 375px; /* Ukuran untuk iPhone 11 */
+    margin: 20px auto;
+    background: #ffe4e1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.status-container h1 {
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: 1.8rem;
+}
+
+
+/* Box Status dan Detail Produk */
+.status-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #ffff;
+    margin-bottom: 20px;
+}
+
+
+.status-info p,
+.status-detail p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    text-align: left; /* Rata kiri untuk semua detail */
+}
+
+
+.status-detail .status {
+    font-weight: bold;
+    color: green;
+}
+
+
+/* Info Produk */
+.product-info {
+    margin-top: 20px;
+}
+
+
+.product-info h2 {
+    color: #ff69b4;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+
+.product-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+
+.product-item .product-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+
+.product-description {
+    flex: 1;
+    text-align: left;
+}
+
+
+.product-description p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+
+/* Tombol Aksi */
+.action-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.action-buttons button {
+    background: #ff69b4;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+
+.action-buttons button:hover {
+    background: #ff85c1;

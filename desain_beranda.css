@@ -1,0 +1,150 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #ffc0cb, #ffe4e1);
+    width: 100%;
+    max-width: 375px; /* Lebar layar iPhone */
+    margin: 0 auto;
+    border-left: 5px solid #f2819d;
+    border-right: 5px solid #f2819d;
+    box-sizing: border-box;
+}
+
+/* Header */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ff69b4;
+    color: white;
+    padding: 15px;
+    position: relative;
+    text-align: center;
+}
+
+.header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.header h1 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.header p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.header-icons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.header-icons img {
+    width: 30px; /* Memperbesar ikon setting */
+    height: 30px;
+    cursor: pointer;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.button-border {
+    font-size: 12px;
+    background: #ff69b4;
+    color: black;
+    border: 1px solid #f2819d;
+    padding: 8px;
+    margin: 0 5px;
+    cursor: pointer;
+    width: 45%; /* Lebar tombol menyesuaikan sisi */
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+.button-border:hover {
+    background: none; /* Tidak ada latar belakang saat hover */
+    color: #f2819d; /* Warna teks berubah menjadi pink */
+}
+
+/* Remove underline from link */
+.profile-link {
+    text-decoration: none;
+    color: inherit; /* Warna mengikuti warna elemen */
+}
+
+/* Content - Circle Layout */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.icon-circle {
+    text-align: center;
+    margin: 15px 0;
+    background: white;
+    border: 2px solid #ffa07a;
+    border-radius: 50%;
+    padding: 15px;
+    width: 90px; /* Diameter lingkaran */
+    height: 90px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-circle:hover {
+    transform: scale(1.1);
+}
+
+.icon-circle img {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-circle p {
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background: #ffb6c1;
+    padding: 10px;
+}
+
+.footer-button {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    background: #f2819d;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.footer-button:hover {
+    background: #ff1493; /* Warna saat di-hover */
+}

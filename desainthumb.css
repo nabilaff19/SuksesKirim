@@ -1,0 +1,125 @@
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding : 0;
+}
+
+.h1 {
+    font-family: 'Arial', sans-serif; 
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.5em;
+    color: #333; 
+}
+
+.container {
+    width: 375px;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fcbcdc;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background: repeating-linear-gradient(90deg, #fff, #fff 10px, #ffc9d6 10px, #ffc9d6 20px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.store-banner {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff5a82;
+    text-shadow: 2px 2px 4px rgba(255, 90, 130, 0.5);
+}
+
+.icon {
+    margin: 10px 0;
+}
+
+.icon img {
+    max-width: 100px;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    mix-blend-mode: multiply;
+}
+
+.stars span {
+    font-size: 50px; /* Membuat bintang lebih besar */
+    color: rgb(243, 140, 157);    /* Menjadikan bintang berwarna pink */
+    text-shadow: 2px 2px 3px rgba(252, 55, 153, 0.7); /* Menambahkan efek bayangan pada bintang */
+}
+
+.message {
+    font-size: 30px;
+    color: #FF69B4;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.login-btn {
+    background-color: #ff5a82;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-btn:hover {
+    background: #FF1493;
+}
+
+
+@media (max-width: 768px) {
+            h1 {
+                font-size: 2em; /* Ukuran heading lebih kecil pada perangkat kecil */
+            }
+
+            .message p {
+                font-size: 1.2em; /* Ukuran font pesan lebih kecil pada perangkat kecil */
+            }
+
+            .login-btn {
+                font-size: 1em; /* Ukuran font tombol lebih kecil pada perangkat kecil */
+                padding: 8px 16px;
+            }
+        }
+
+        /* Khusus untuk iPhone 11 (width: 375px) */
+        @media (max-width: 375px) {
+            h1 {
+                font-size: 1.8em; /* Ukuran heading lebih kecil */
+            }
+
+            .message p {
+                font-size: 1.1em; /* Ukuran font pesan lebih kecil */
+            }
+
+            .login-btn {
+                font-size: 0.9em; /* Ukuran font tombol lebih kecil */
+                padding: 6px 14px;
+            }
+        }

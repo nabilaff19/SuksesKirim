@@ -1,0 +1,102 @@
+body {
+    font-family: 'Georgia', sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding : 0;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 375px;
+    text-align: center;
+    padding: 20px;
+    border-left: 4px solid #f3c0c0; /* Garis tepi kiri */
+    border-right: 4px solid #f3c0c0; /* Garis tepi kanan */
+    background-color: #fcd6e9; /* Warna latar belakang */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan */
+    margin: 10px auto;
+}
+
+.header img {
+    width: 80%;
+    margin-top: 10px;
+    mix-blend-mode: multiply;
+}
+
+.icon img {
+    width: 80px;
+    margin: 20px auto;
+}
+
+
+.form {
+    margin-top: 20px;
+}
+
+
+.input-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+
+.input-group label img {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 20px;
+    mix-blend-mode: multiply;
+}
+
+
+.input-group input {
+    width: calc(95% - 40px);
+    padding: 10px 15px 10px 40px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    background-color: #ffc0cb;
+    font-size: 16px;
+}
+
+
+.forgot-password {
+    display: block;
+    margin: 10px 0;
+    color: #7a3b3f;
+    text-decoration: none;
+}
+
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #ff6f91;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+.divider {
+    margin: 20px 0;
+    color: #7a3b3f;
+    font-weight: bold;
+}
+
+
+.footer {
+    margin-top: 20px;
+    color: #7a3b3f;
+    font-weight: bold;
+}

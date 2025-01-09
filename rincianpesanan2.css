@@ -1,0 +1,277 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 20px;
+    border-left: 4px solid #ff8383; /* Garis tepi kiri */
+    border-right: 4px solid #ff8383; /* Garis tepi kanan */
+    max-width: 375px; /* Disesuaikan untuk lebar iPhone 11 */
+}
+
+/* Section Header */
+.section h1 {
+    background-color: #f8c3c9;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    color: #333;
+}
+
+/* Sender and Receiver Info */
+.sender-receiver p {
+    margin: 5px 0;
+}
+
+.icon-location {
+    color: #c00;
+}
+
+/* Product Box */
+.product-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-header img {
+    width: 30px;
+    height: auto;
+}
+
+.product-detail {
+    display: flex;
+    margin-top: 10px;
+}
+
+.product-image {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.product-info p {
+    margin: 5px 0;
+}
+
+/* Tracking Box */
+.tracking-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tracking Section */
+.tracking-section {
+    margin-top: 20px;
+}
+
+.tracking-section h2 {
+    color: #333;
+    font-size: 1em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.tracking-steps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tracking-steps .step {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.tracking-steps .step:last-child {
+    border-bottom: none;
+}
+
+.step-content {
+    display: flex;
+    align-items: center;
+}
+
+.step-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1em;
+    margin-right: 15px;
+    color: #fff;
+}
+
+.step.completed .step-icon {
+    background-color: #28a745;
+}
+
+.step.current .step-icon {
+    background-color: #ffc107;
+}
+
+.step.pending .step-icon {
+    background-color: #ddd;
+    color: #666;
+}
+
+.step-text {
+    flex: 1;
+}
+
+.step-info {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.step-date {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Media Queries for iPhone 11 */
+@media screen and (max-width: 375px) {
+    .step-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .step-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 1em;
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+
+    .step-text {
+        text-align: left;
+    }
+}
+
+/* Help Section */
+.help-section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.help-section h2 {
+    text-align: center;
+    background-color: #f8c3c9;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+.help-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.help-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.help-item:hover {
+    background-color: #f8c3c9;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.help-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    width: 100%;
+}
+
+.help-icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+    color: #007bff;
+}
+
+.help-text {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #333;
+}
+
+.help-item:hover .help-text {
+    color: #fff;
+}
+
+/* Resi Box */
+.resi-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+/* Button Styles */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: #f8c3c9;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.back-button:hover {
+    background-color: #ff8383;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
